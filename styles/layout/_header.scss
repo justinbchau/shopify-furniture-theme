@@ -2,7 +2,6 @@
 @import '../base/typography';
 
 .header {
-  position: fixed;
   width: 1920px;
   height: 45px;
   left: 1px;
@@ -10,53 +9,29 @@
   font-size: 12px;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  width: 1920px;
-  height: 71px;
-  left: 0px;
-  top: 45px;
-  background: #ffffff;
-
-  &__title {
-    font-size: 18px;
-    font-family: $josefin-sans;
-    letter-spacing: 0.235em;
-    line-height: 21px;
-    width: 135px;
-    height: 18px;
-    top: 71px;
-    margin-left: 200px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
 .nav-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   font-family: $lato;
   font-weight: 700;
   font-size: 14px;
-  text-align: center;
-  justify-items: center;
-  margin-left: 390px;
 
-  li {
-    list-style-type: none;
+  button {
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
     margin-right: 50px;
   }
-}
 
-.list {
-  display: flex;
-  justify-content: center;
+  &__dropdown {
+    margin-left: 5px;
+  }
 }
 
 .link-bar {
@@ -72,13 +47,74 @@
     margin-right: 10px;
   }
 
-  &--links {
+  &__links {
     color: $text-grey;
-    font-size: 9px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__language {
+    margin-right: 2px;
   }
 
   &--color {
     color: $red;
+  }
+
+  &__icons {
+    margin-right: 5px;
+  }
+
+  &__socials {
+    margin-left: 10px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 71px;
+  left: 0px;
+  // top: 45px;
+  background: #ffffff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-family: $josefin-sans;
+    letter-spacing: 0.235em;
+    line-height: 21px;
+    width: 135px;
+    height: 18px;
+    top: 71px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__search {
+    margin-right: 25px;
+  }
+
+  &__cart {
+    margin-right: 10px;
   }
 }
 
@@ -86,7 +122,7 @@
   color: $red;
 }
 
-.line-break {
-  border-left: 1px solid black;
-  height: 50px;
+.divider {
+  margin-left: 20px;
+  margin-right: 20px;
 }

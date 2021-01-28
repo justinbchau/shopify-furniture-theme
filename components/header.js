@@ -10,32 +10,114 @@ export default function Header() {
             Free shipping worldwide for orders over{' '}
             <span className='link-bar--color'>$200</span>
           </p>
-          <div className='link-bar--links'>
+          <div className='link-bar__links'>
+            <img src='/mail.svg' alt='Mail Icon' className='link-bar__icons' />
             <span>shanjairaj@gmail.com</span>
+            <img
+              src='/phone.svg'
+              alt='Phone Icon'
+              className='link-bar__icons'
+            />
             <span>(272) 471-2477</span>
+            <img
+              src='/divider.svg'
+              alt='Divider'
+              className='link-bar__icons divider'
+            />
+            <Link href='/'>
+              <a className='link-bar__language'>USD</a>
+            </Link>
+            <img
+              src='/dropdown.svg'
+              alt='Dropdown Icon'
+              className='link-bar__icons'
+            />
+            {/* Social Links */}
+            <div className='link-bar__socials'>
+              <a href='#'>
+                <img
+                  src='/facebook.svg'
+                  alt='Dropdown Icon'
+                  className='link-bar__icons'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  src='/twitter.svg'
+                  alt='Dropdown Icon'
+                  className='link-bar__icons'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  src='/instagram.svg'
+                  alt='Dropdown Icon'
+                  className='link-bar__icons'
+                />
+              </a>
+              <a href='#'>
+                <img
+                  src='/youtube.svg'
+                  alt='Dropdown Icon'
+                  className='link-bar__icons'
+                />
+              </a>
+            </div>
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className='navbar'>
-          <h1 className='navbar__title'>
-            <Link href='/'>SELENTIAL</Link>
-          </h1>
+          <div className='navbar__container'>
+            <h1 className='navbar__title'>
+              <Link href='/'>SELENTIAL</Link>
+            </h1>
 
-          <div className='list'>
-            <ul className='nav-list'>
-              <li className='active'>
+            {/* List Items */}
+            <div className='nav-list'>
+              <button className='active nav-list__item'>
                 <Link href='/'>Home</Link>
-              </li>
-              <li>
+              </button>
+
+              <button className='nav-list__item'>
                 <Link href='/'>Shop</Link>
-              </li>
-              <li>
+                <img
+                  src='/black-dropdown.svg'
+                  alt='Dropdown Icon'
+                  className='nav-list__dropdown'
+                />
+              </button>
+
+              <button className='nav-list__item'>
                 <Link href='/'>Collections</Link>
-              </li>
-              <li>
+                <img
+                  src='/black-dropdown.svg'
+                  alt='Dropdown Icon'
+                  className='nav-list__dropdown'
+                />
+              </button>
+
+              <button className='nav-list__item'>
                 <Link href='/'>Contact Us</Link>
-              </li>
-            </ul>
+              </button>
+            </div>
+
+            <div>
+              <a href='/'>
+                <img
+                  src='/search.svg'
+                  alt='Dropdown Icon'
+                  className='navbar__search'
+                />
+              </a>
+              <a href='/'>
+                <img
+                  src='/cart.svg'
+                  alt='Dropdown Icon'
+                  className='navbar__cart'
+                />
+              </a>
+            </div>
           </div>
         </div>
       </nav>
