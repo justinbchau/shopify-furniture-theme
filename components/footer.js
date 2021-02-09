@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Socials from './socials';
 
 export default function Footer() {
   const date = new Date().getFullYear();
@@ -11,36 +12,7 @@ export default function Footer() {
             <h1 className='footer__title'>
               <Link href='/'>SELENTIAL</Link>
             </h1>
-            <div className='link-bar__socials'>
-              <a href='#'>
-                <img
-                  src='/facebook.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/twitter.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/instagram.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/youtube.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-            </div>
+            <Socials />
           </div>
 
           <div className='box'>

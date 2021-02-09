@@ -3,7 +3,7 @@
 
 .footer {
   max-width: 1920px;
-  width: 100%;
+  width: 100vw;
   height: 807px;
   background-color: $footer-background;
   display: flex;
@@ -17,6 +17,7 @@
     justify-content: center;
     width: 80%;
     height: 75%;
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -35,7 +36,7 @@
 
   &:nth-child(1) {
     width: 40%;
-    text-align: center;
+    text-align: left;
   }
 
   &__title {
@@ -48,7 +49,7 @@
 
   li {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 17px;
     letter-spacing: 0.02em;
     margin-bottom: 1.25em;

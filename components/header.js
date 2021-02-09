@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Socials from './socials';
 
 export default function Header() {
   return (
@@ -30,39 +31,10 @@ export default function Header() {
             <img
               src='/dropdown.svg'
               alt='Dropdown Icon'
-              className='link-bar__icons'
+              className='link-bar__dropdown'
             />
             {/* Social Links */}
-            <div className='link-bar__socials'>
-              <a href='#'>
-                <img
-                  src='/facebook.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/twitter.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/instagram.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-              <a href='#'>
-                <img
-                  src='/youtube.svg'
-                  alt='Dropdown Icon'
-                  className='link-bar__icons'
-                />
-              </a>
-            </div>
+            <Socials />
           </div>
         </div>
 

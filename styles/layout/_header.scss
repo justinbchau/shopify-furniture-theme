@@ -2,7 +2,8 @@
 @import '../base/typography';
 
 .header {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100vw;
   height: 45px;
   left: 1px;
   top: 0px;
@@ -36,9 +37,10 @@
 
 .link-bar {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  margin: 0 200px;
+  padding: 0 200px;
   font-weight: 700;
   font-family: $lato;
   background-color: $white;
@@ -66,12 +68,8 @@
     margin-right: 5px;
   }
 
-  &__socials {
-    margin-left: 10px;
-
-    img {
-      margin-right: 8px;
-    }
+  &__dropdown {
+    margin-right: 10px;
   }
 }
 
