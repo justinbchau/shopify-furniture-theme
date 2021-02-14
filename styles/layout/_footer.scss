@@ -26,6 +26,7 @@
     font-weight: bold;
     letter-spacing: 0.235em;
     line-height: 21px;
+    margin-bottom: 5px;
   }
 }
 
@@ -35,8 +36,16 @@
   margin: 0;
 
   &:nth-child(1) {
-    width: 40%;
+    width: 30%;
     text-align: left;
+  }
+
+  &:nth-child(3) {
+    width: 25%;
+  }
+
+  &:nth-child(4) {
+    width: 15%;
   }
 
   &__title {
@@ -44,7 +53,23 @@
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 24px;
-    margin-bottom: 0.85em;
+    margin-bottom: 1.7em;
+  }
+
+  &__contact {
+    font-size: 10px;
+
+    p {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 2em;
+      line-height: 12px;
+      color: #464646;
+    }
+
+    img {
+      width: 17px;
+    }
   }
 
   li {
@@ -52,6 +77,6 @@
     font-weight: normal;
     line-height: 17px;
     letter-spacing: 0.02em;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.8em;
   }
 }

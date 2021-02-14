@@ -53,15 +53,25 @@ export default function Footer() {
 
           <div className='box'>
             <h2 className='box__title'>Contact Us</h2>
-            <ul>
-              <li>shanjairaj@gmail.com</li>
-              <li>(272) 471-2477</li>
-            </ul>
-
-            <h2 className='box__title'>Our Location</h2>
-            <ul>
-              <li>2411 Columbia Boulevard Baltimore, MD</li>
-            </ul>
+            <div className='box__contact'>
+              <img
+                src='/mail.svg'
+                alt='Mail Icon'
+                className='link-bar__icons'
+              />
+              <p>shanjairaj@gmail.com</p>
+              <br />
+              <img
+                src='/phone.svg'
+                alt='Phone Icon'
+                className='link-bar__icons'
+              />
+              <p>(272) 471-2477</p>
+              <h2 className='box__title'>Our Location</h2>
+              <ul>
+                <li>2411 Columbia Boulevard Baltimore, MD</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className='footer__bottom'>
